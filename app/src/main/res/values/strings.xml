@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Cooking Unit Converter</string>
+    <string name="gm">Gram</string>
+    <string name="kg">Kilogram</string>
+    <string name="cup">Cup</string>
+    <string name="Teaspoon">Teaspoon</string>
+    <string name="ml">Milliliter</string>
+    <string name="li">Litre</string>
+    <string name="tablespoon">Tablespoon</string>
+    <string name="hint">20</string>
+    <string name="button">Convert</string>
+</resources>

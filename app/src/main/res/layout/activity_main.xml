@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/base_unit_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Gram" />
+
+    <TextView
+        android:id="@+id/converted_unit_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Cup" />
+
+    <EditText
+        android:id="@+id/base_unit"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/base_unit_name" />
+
+    <TextView
+        android:id="@+id/converted_unit"
+        android:layout_width="160dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/converted_unit_name"
+        tools:text="20" />
+
+    <RadioGroup
+        android:id="@+id/base_unit_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:checkedButton="@id/unit_gm"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/base_unit">
+
+        <RadioButton
+            android:id="@+id/unit_gm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gm" />
+
+        <RadioButton
+            android:id="@+id/unit_kg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/kg" />
+
+        <RadioButton
+            android:id="@+id/unit_cup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cup" />
+
+        <RadioButton
+            android:id="@+id/unit_teaspoon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Teaspoon" />
+
+        <RadioButton
+            android:id="@+id/unit_tablespoon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tablespoon" />
+
+        <RadioButton
+            android:id="@+id/unit_li"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/li" />
+
+        <RadioButton
+            android:id="@+id/unit_ml"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ml" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/converted_unit_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:checkedButton="@id/converted_unit_cup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/converted_unit">
+
+        <RadioButton
+            android:id="@+id/converted_unit_gm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gm" />
+
+        <RadioButton
+            android:id="@+id/converted_unit_kg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/kg" />
+
+        <RadioButton
+            android:id="@+id/converted_unit_cup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cup" />
+
+        <RadioButton
+            android:id="@+id/converted_unit_teaspoon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Teaspoon" />
+
+        <RadioButton
+            android:id="@+id/converted_unit_tablespoon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tablespoon" />
+
+        <RadioButton
+            android:id="@+id/converted_unit_li"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/li" />
+
+        <RadioButton
+            android:id="@+id/converted_unit_ml"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ml" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/convert_unit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/converted_unit_group"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
